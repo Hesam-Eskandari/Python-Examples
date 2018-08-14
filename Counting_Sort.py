@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[28]:
-
-
 #Counting sort algorithm
 #Restriction: The input must be a list of positive integers
 
@@ -11,7 +5,7 @@ from random import randint
 from time import time
 def counting_sort(A):
     """
-    Input: A random list of positive integers
+    Input: a random list of positive integers
     Output: sorted by counting sort
     """
     c=[0 for i in xrange(max(A))]
@@ -41,4 +35,3 @@ t3=time()
 print 'built in sorted algorithm:',t3-t2,'sec'
 print 'if the results are the same:',l1==l2
     
-
