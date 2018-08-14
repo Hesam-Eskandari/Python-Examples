@@ -17,8 +17,8 @@ def insertion(l,i=1):
     
 def inner_insertion(l,i,j=0):
     """
-    Input: list "l" and element "i"
-    Output: put "i" in a proper (sorted) position in "l"
+    Input: list "l" and index "i"
+    Output: put "l[i]" in a proper (sorted) position in "l"
     """
     if j==i-1:
         return l
