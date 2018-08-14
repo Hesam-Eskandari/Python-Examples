@@ -1,14 +1,13 @@
-
-# coding: utf-8
-
-# In[1]:
-
-
 #Insertion Sort by Using For loops
-from random import random
+#Time complexity of an imput of size "n"= O(n**2)
+from random import randint
 from time import time
-l=[100*random()-50 for i in xrange(2**11)]
+
 def insertion(l):
+    """
+    Input: a randomly generated list 
+    Output: sorted imput 
+    """
     for i in range(len(l)):
         k=i
         for j in range(i):
@@ -19,10 +18,10 @@ def insertion(l):
                 k-=1
     return l
 
-#l= [3,2,1,7,6,4,-1,0,15,-12,18]
+size=2**12
+l= [randint(-100,100) for i in xrange(size)]
 #print l
 t1 = time()
 l2=insertion(l)
 t2=time()-t1
 print "Elapsed Time:",t2
-
